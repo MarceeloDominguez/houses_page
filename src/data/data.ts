@@ -15,7 +15,7 @@ export const houseData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
 
     size: 30,
-    maxPerson: 1,
+    maxPerson: 7,
     price: 115,
     image: house1,
   },
@@ -26,7 +26,7 @@ export const houseData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
 
     size: 30,
-    maxPerson: 1,
+    maxPerson: 3,
     price: 115,
     image: house2,
   },
@@ -37,7 +37,7 @@ export const houseData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
 
     size: 30,
-    maxPerson: 1,
+    maxPerson: 4,
     price: 115,
     image: house3,
   },
@@ -48,7 +48,7 @@ export const houseData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
 
     size: 30,
-    maxPerson: 1,
+    maxPerson: 2,
     price: 115,
     image: house4,
   },
@@ -59,7 +59,7 @@ export const houseData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
 
     size: 50,
-    maxPerson: 1,
+    maxPerson: 5,
     price: 115,
     image: house5,
   },
@@ -70,7 +70,7 @@ export const houseData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
 
     size: 60,
-    maxPerson: 1,
+    maxPerson: 8,
     price: 116,
     image: house6,
   },
@@ -81,7 +81,7 @@ export const houseData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
 
     size: 70,
-    maxPerson: 1,
+    maxPerson: 6,
     price: 115,
     image: house7,
   },

@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #202020;
+@layer base {
+  .h3 {
+    @apply text-2xl font-primary font-semibold tracking-[1px] mb-2;
+  }
+  .btn {
+    @apply text-[15px] tracking-[2px] font-third uppercase text-white flex-1 transition-all px-8 flex justify-center items-center;
+  }
+  .btn-sm {
+    @apply h-[48px];
+  }
+  .btn-primary {
+    @apply bg-primary hover:bg-hover;
+  }
+  .btn-secondary {
+    @apply bg-secondary hover:bg-hover;
+  }
+  .bg-card {
+    @apply bg-slate-100;
+  }
 }
