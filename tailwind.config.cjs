@@ -8,6 +8,9 @@ module.exports = {
         hover: "#7D8F69",
         secondary: "#3C6255",
       },
+      backgroundImage: {
+        house: "url('./assets/slides/slides-2.jpg')",
+      },
     },
     fontFamily: {
       primary: "Gilda Display",

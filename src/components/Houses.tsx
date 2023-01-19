@@ -13,6 +13,14 @@ export default function Houses() {
         </div>
       )}
       <div className="container mx-auto lg:px-0">
+        <div className="text-center">
+          <p className="font-third uppercase text-[15px] tracking-[6px]">
+            Room & Suites
+          </p>
+          <h2 className="font-primary text-[45px] mb-4">Houses & Cabins</h2>
+        </div>
+      </div>
+      <div className="container mx-auto lg:px-0">
         <div className="grid grid-cols-1 max-w-sm mx-auto gap-[30px] lg:grid-cols-3 lg:max-w-none lg:mx-0">
           {houses.map((house) => (
             <House key={house.id} house={house} />

@@ -1,12 +1,14 @@
 import { HouseInterface } from "../interface/houseInterface";
-import { BsArrowsFullscreen, BsPeople } from "react-icons/bs";
+import { BsPeople } from "react-icons/bs";
+import { MdOutlinePets } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 type Props = {
   house: HouseInterface;
 };
 
 export default function House({ house }: Props) {
-  const { name, image, maxPerson, size, description, price } = house;
+  const { name, image, maxPerson, description, price, id, pets } = house;
 
   return (
     <div className="shadow-lg min-h-[500px] group bg-card">
@@ -23,11 +25,10 @@ export default function House({ house }: Props) {
           {/* size */}
           <div className="flex items-center gap-x-2">
             <div>
-              <BsArrowsFullscreen className="text-[12px] text-secondary" />
+              <MdOutlinePets className="text-[14px] text-secondary" />
             </div>
             <div className="flex gap-x-1">
-              <p>Size</p>
-              <h3>{size}m2</h3>
+              <p>{pets ? "with pets" : "no pets"}</p>
             </div>
           </div>
           {/* house capacity */}
@@ -45,14 +46,17 @@ export default function House({ house }: Props) {
       <div>
         {/* name & description */}
         <div className="text-center">
-          <h3 className="h3">{name}</h3>
+          <h3 className="h3 capitalize">{name}</h3>
           <p className="max-w-[300px] mx-auto mb-3 lg:mb-6 font-secondary tracking-[1px]">
             {description.slice(0, 100)}
           </p>
         </div>
-        <div className="btn btn-secondary btn-sm max-w-[260px] mx-auto">
+        <Link
+          to={`/house/${id}`}
+          className="btn btn-secondary btn-sm max-w-[260px] mx-auto"
+        >
           Book now from ${price}
-        </div>
+        </Link>
       </div>
     </div>
   );

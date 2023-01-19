@@ -1,9 +1,15 @@
+interface Facilities {
+  name: string;
+  icon: JSX.Element;
+}
+
 export interface HouseInterface {
   id: number;
   name: string;
   description: string;
-  size: number;
   maxPerson: number;
   price: number;
   image: string;
+  pets: boolean;
+  facilities: Array<Facilities>;
 }
