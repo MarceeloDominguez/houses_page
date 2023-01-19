@@ -7,13 +7,15 @@ import "../datepicker.css";
 import { BsCalendar } from "react-icons/bs";
 
 type Props = {
-  selectedDate: Date | null;
-  setSelectedDate: (date: Date) => void;
+  selectedDate: Date | string;
+  setSelectedDate: (date: Date | string) => void;
+  title: string;
 };
 
 export default function CalendarSelect({
   selectedDate,
   setSelectedDate,
+  title,
 }: Props) {
   return (
     <div className="relative flex items-center justify-end h-full">
@@ -24,8 +26,8 @@ export default function CalendarSelect({
       </div>
       <DatePicker
         className="w-full h-full"
-        placeholderText="Check in"
-        selected={selectedDate}
+        selected={selectedDate ? new Date(selectedDate) : null}
+        placeholderText={title}
         onChange={(date: Date) => setSelectedDate(date)}
         locale="es"
         dateFormat="P"

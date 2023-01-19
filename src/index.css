@@ -12,6 +12,9 @@
   .btn-sm {
     @apply h-[48px];
   }
+  .btn-lg {
+    @apply h-[60px];
+  }
   .btn-primary {
     @apply bg-primary hover:bg-hover;
   }

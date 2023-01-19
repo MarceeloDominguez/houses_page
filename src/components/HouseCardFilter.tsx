@@ -8,18 +8,16 @@ export default function HouseCardFilter() {
   const { adults, kids, handleClickAdults, handleClickKids, handleClick } =
     useContextHouse();
 
-  const [selectedDateStart, setSelectedDateStart] = useState<Date | null>(
-    new Date()
-  );
-  const [selectedDateEnd, setSelectedDateEnd] = useState<Date | null>(
-    new Date()
-  );
+  const [selectedDateStart, setSelectedDateStart] = useState<string | Date>("");
+
+  const [selectedDateEnd, setSelectedDateEnd] = useState<string | Date>("");
 
   return (
     <div className="h-[300px] w-full lg:h-[70px]">
       <div className="flex flex-col lg:flex-row w-full h-full">
         <div className="flex-1">
           <CalendarSelect
+            title="Check in"
             selectedDate={selectedDateStart}
             setSelectedDate={setSelectedDateStart}
           />
@@ -28,6 +26,7 @@ export default function HouseCardFilter() {
           <CalendarSelect
             selectedDate={selectedDateEnd}
             setSelectedDate={setSelectedDateEnd}
+            title="Check out"
           />
         </div>
         <div className="flex-1">
